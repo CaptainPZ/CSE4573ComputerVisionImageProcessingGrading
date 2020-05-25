@@ -1,0 +1,10 @@
+This script can extract and execute submitted codes and then compare the results of submitted and new executed ones. The result is a csv table like below:
+
+| returncode | status | generated output                                             | submitted output                                             | Code Run? | submittted and Generated Match ? |
+| ---------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------- | -------------------------------- |
+| 0          | TRUE   | box 0: 332-2-20-20; box 1: 30-8-20-20; box 2: 32-8-20-20; box 3: 34-8-20-20; box 4: 36-8-20-20; box 5: 38-8-20-20; box 6: 40-8-20-20; box 7: 42-8-20-20; box 8: 44-8-20-20; box 9: 46-8-20-20; box 10: 4 |                                                              | Yes       | FALSE                            |
+| 0          | TRUE   | box 0: 14-71-213-213;                                        | box 0: 14-167-213-213;                                       | Yes       | FALSE                            |
+| 0          | TRUE   |                                                              | box 0: 216-238-1007-647;                                     | Yes       | FALSE                            |
+| 0          | TRUE   | 70                                                           |                                                              | Yes       | FALSE                            |
+| 1          | FALSE  |                                                              |                                                              | No        | TRUE                             |
+| 0          | TRUE   | box 0: 0-450-900-900; box 1: 200-400-400-400; box 2: 200-100-100-100; box 3: 250-350-100-100; box 4: 250-450-100-100; box 5: 400-550-100-100; box 6: 450-850-100-100; box 7: 500-850-100-100; box 8: 300 | box 0: 0-450-900-900; box 1: 200-400-400-400; box 2: 200-100-100-100; box 3: 250-350-100-100; box 4: 250-450-100-100; box 5: 400-550-100-100; box 6: 450-850-100-100; box 7: 500-850-100-100; box 8: 300 | Yes       | TRUE                             |
