@@ -14,7 +14,7 @@ This article includes following sections:
 
   > Ask them to submit all python files in one file will make it easier to perform moss check since it will be easier to quantify how many lines of code in total in this submission have potential academic integrity issue. But it is still possible to post process and concatenate their files into one if split. 
 
-- Submission package structure, which shall at lease includes instruction on following:
+- Submission package structure, which shall include instructions on at least following items:
 
   - Main script name and location
 
@@ -26,7 +26,7 @@ This article includes following sections:
 
   - Report (if required)
 
-  - All dependencies 
+  - All dependencies' version (It is recommended to specify ahead to make grading easier.)
 
 - Directory handling
 
