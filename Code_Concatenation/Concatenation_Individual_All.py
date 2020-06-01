@@ -21,7 +21,7 @@ def main():
     # a tmp location to unzip each zipped package
     work_dir = "./tmp"
 
-    
+    # output folder
     out_dir =  "./out"
 
     # some students like to include exmaple files we handout to them, need to exclude those files in concenation to avoid potential falsealarm
