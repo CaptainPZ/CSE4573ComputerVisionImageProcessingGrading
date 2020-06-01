@@ -14,9 +14,17 @@ def main():
 
     return: each student will result in only one py file which was composed of all py files they submitted.
     '''
+
+    # root directory to previous year's submission
     zip_dir = "../Downloaded/res00043"
+
+    # a tmp location to unzip each zipped package
     work_dir = "./tmp"
+
+    
     out_dir =  "./out"
+
+    # some students like to include exmaple files we handout to them, need to exclude those files in concenation to avoid potential falsealarm
     bkls = ["ComputeFBeta", "create_json_sample"]
 
     if not os.path.isdir(out_dir):

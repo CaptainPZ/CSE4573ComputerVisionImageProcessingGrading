@@ -25,7 +25,6 @@ def combine_all(dir,  file_ls, out_file_name):
 
 # concatenate all files in one folder to just one py file
 
-
-dir = "./out"
+dir = "./out"  # dir to all python scripts to be concatenated
 
 combine_all(dir, os.listdir(dir), "2019SpringAll.py")
