@@ -39,6 +39,7 @@ This article includes following sections:
   > Recommended reference:
   >
   > 	1. https://docs.python.org/3/library/sys.html#sys.argv  (With no flags)
+  >
   >  	2. https://docs.python.org/3/library/argparse.html   (With flags)
 
 - Results file format (if applicable)
@@ -49,7 +50,7 @@ This article includes following sections:
   >
   > [checker](../Project3_FaceDetection/Json_Checker_Annotator/)
   >
-  > [result creation demo](../Project3_FaceDetection/json_example/)
+  > [result creation demo](../Project3_FaceDetection/)
 
 - Submission Guideline
 
