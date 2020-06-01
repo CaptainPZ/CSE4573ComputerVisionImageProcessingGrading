@@ -24,6 +24,12 @@
 >
 > ![image-20200531122405158](readme.assets/image-20200531122405158.png)
 >
+> 
+>
+> Below is an example of the concatenated file from one submission:
+>
+> There is a master index at the beginning telling how many python files in total found in this package, followed by the contents from each python script.
+
 > ```python
 > >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 > Archive Dir: _7120373_1
