@@ -92,6 +92,81 @@ There are two scripts resided in this directory.
 
 - [Concatenation_Individual_All.py](../Code_Concatenation/Concatenation_Individual_All.py) can be used under the scenario where if each student submits multiple python scripts and you want to concatenate them based on person. This scrip will goes into each submitted zip package, unzip it to tmp directory and recursively search all python scripts (you can specify certain files to exclude) and then combine them to one script per zip package. Depends on the structure of the file directory, some minor changes may needed before running. See the readme underneath this folder for the file structure the script was developed for. 
 
+  Example of the concatenated script:
+  
+  ```python
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Archive Dir: _7120373_1
+  Archive Name: undergrad_project_3.zip
+  PY Files in zip:
+  	1 ./tmp/_7120373_1/_7120373_1/utils.py
+  	2 ./tmp/_7120373_1/_7120373_1/feature.py
+  	3 ./tmp/_7120373_1/_7120373_1/YourFaceDetector.py
+  	4 ./tmp/_7120373_1/_7120373_1/dataset.py
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+  
+  ###################################################
+  # Inner File: ./tmp/_7120373_1/_7120373_1/utils.py
+  ###################################################
+  
+  import numpy as np
+  from PIL import Image
+  import os
+  
+  def load_images(path):
+      images = []
+      for _file in os.listdir(path):
+          if _file.endswith('.jpg'):
+              #print(os.path.join(path, _file))
+              img = np.array(Image.open((os.path.join(path, _file))).convert("L"), dtype=np.float32)
+              img /= img.max()
+              images.append(img)
+      return images
+  ...........
+  
+  ###################################################
+  # Inner File: ./tmp/_7120373_1/_7120373_1/feature.py
+  ###################################################
+  
+  import numpy as np
+  from PIL import Image
+  from multiprocessing import Pool
+  from functools import partial
+  from utils import load_images
+  import time
+  
+  .........
+      
+  
+  ###################################################
+  # Inner File: ./tmp/_7120373_1/_7120373_1/YourFaceDetector.py
+  ###################################################
+  
+  from functools import partial
+  import numpy as np
+  from feature import 
+  
+  
+  def train(num_classifiers=80):
+  
+      pos_samples = load_images('../train/positive')
+      neg_samples = load_images('../train/negative')
+  
+      pos_num = len(pos_samples)
+   
+  ............
+  ###################################################
+  # Inner File: ./tmp/_7120373_1/_7120373_1/dataset.py
+  ###################################################
+  
+  import cv2
+  import os
+  import numpy as np
+  import random
+  .........
+  ```
+  
   
 
 **<u>Moss:</u>**
